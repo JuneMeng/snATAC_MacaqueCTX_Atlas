@@ -11,7 +11,7 @@ parser$add_argument('-G', '--group', help='specify a column in colData for pseud
 args <- parser$parse_args()
 
 #metafile <- readRDS('/cluster/share/atac_group/mafas5/5.merge2macaque/Save-projHeme-Tile-MergeAnno/metaAll.anno.RefineClusterV1205.rds')
-proj_all <- loadArchRProject('/cluster/share/atac_group/mafas5/cre/Save_noGABA_project')
+proj_all <- loadArchRProject('/cluster/share/atac_group/mafas5/cre/Save_project')
 #proj_all <- proj_all[proj_all$cellNames %in% rownames(metafile)]
 #proj_all$CellType <- metafile[proj_all$cellNames,'CellType']
 proj <- proj_all[proj_all$Anno2st == args$group]
