@@ -28,7 +28,7 @@ library(GenomicFeatures)
 
 gtf_file="/cluster/share/atac_group/mafas5/ref/Macaca_fascicularis_5.0.91.2.2_huada.gtf"
 
-gtf_file="/cluster/share/atac_group/mafas5/chen_ws/response/SA/Macaca_mulatta.Mmul_10.112.gtf"
+gtf_file="/cluster/share/atac_group/mafas5/chen_ws/Macaca_mulatta.Mmul_10.112.gtf"
 
 gtf_file="/cluster/share/atac_group/human/ref/Homo_sapiens.GRCh38.110_MJ.gtf"
 
@@ -84,7 +84,6 @@ peak.ann <- cbind(peak.ann,df)
 library(ggplot2)
 library(ggsci)
 
-setwd('上海猴脑atac/response/peak_anno/')
 
 df <- readRDS('all_anno_peak.Rds')
 df$type <- rownames(df)
